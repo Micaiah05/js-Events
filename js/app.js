@@ -21,6 +21,14 @@ function moreTrees(){
 
 The function will hide the contents in the pargraph with the id of `less`.*/
 
+function lessContent(){
+    if(less.style.display = 'block'){
+        less.style.display = 'none'
+    }else{
+        less.style.display = 'block'
+    }
+}
+
 
 
 //3. Edward (エドワード)
