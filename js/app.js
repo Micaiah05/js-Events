@@ -82,6 +82,7 @@ function newImage(){
 //6. DevLeague Lunch Wagon
 /*Add an event listener to the `menu` div element that will display and hide the dessert item after clicking on 'Today's Special'*/
 
+
 menu.addEventListener('click', deldessert);
 
 function deldessert(){
