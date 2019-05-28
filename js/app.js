@@ -63,21 +63,34 @@ function displayMissing(){
     ingredient.appendChild(missingli);
 }
 
-
-
-
 //5. Pug Life
 /*Add an event listener to the img element `puggy` that will rollover a new image after hovering over it.*/
 
 // Use this for the new image:
 // 'https://media.giphy.com/media/12pJ8OxSWwO86Y/giphy.gif'
 
+puggy.addEventListener('mouseover', newImage);
 
+function newImage(){
+    if (puggy.src === 'https://media.giphy.com/media/12pJ8OxSWwO86Y/giphy.gif'){
+        puggy.src = 'vhttps://bit.ly/2RhOvm4'
+    }else{
+        puggy.src = 'https://media.giphy.com/media/12pJ8OxSWwO86Y/giphy.gif'
+    }
+}
 
 //6. DevLeague Lunch Wagon
 /*Add an event listener to the `menu` div element that will display and hide the dessert item after clicking on 'Today's Special'*/
 
+menu.addEventListener('click', deldessert);
 
+function deldessert(){
+    if (dessert.style.display === 'none'){
+        dessert.style.display = 'block'
+    }else{
+        dessert.style.display = 'none'
+    }
+}
 
 //7. The Purple Monster
 /*Add an event listener to the `bio` paragraph element that will display Grimace's name, sign and hobbies after clicking on the paragraph element. Hint, you'll need to create new elements for each object property. Apppend these new elements into the `bio` paragraph element.*/
