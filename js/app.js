@@ -102,8 +102,26 @@ var grimace = {
     sign: 'Scorpio',
     bloodtype: 'O postive',
     hobbies: ['knitting', 'scrapbooking', 'mixed martial arts']
-};
+}
 
+bio.addEventListener('click', addPurple)
+
+function addPurple(){
+    var purpleName = document.createElement('p')
+    purpleName.id = 'name';
+    purpleName.innerHTML = 'Name: ' + grimace.name;
+    bio.appendChild(purpleName)
+
+    var purpleSign = document.createElement('p')
+    purpleSign.id = 'sign';
+    purpleSign.innerHTML = 'Sign: ' + grimace.sign;
+    bio.appendChild(purpleSign)
+
+    var purpleHobbies = document.createElement('p')
+    purpleHobbies.id = 'hobbies';
+    purpleHobbies.innerHTML = 'Hobbies: ' + grimace.hobbies.toString(', ');
+    bio.appendChild(purpleHobbies)
+}
 
 //8. Fortune Cookie
 /*Add an event listener to the `fortune` button that will generate a random message in the `showFortune` h3 element after clicking on the button*/
